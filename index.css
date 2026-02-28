@@ -181,8 +181,9 @@ h1 span {
   padding: 22px 26px;
   border-radius: 16px;
   margin-bottom: 18px;
-  width: 80%;
-  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   border: 1px solid rgba(15, 23, 42, 0.06);
 }
 

@@ -110,10 +110,12 @@ nav ul li a.active:not(.btn-link) {
 
 .contact-box {
   flex: 1;
+  min-width: 0;
 }
 
 .contact-form-box {
   flex: 1;
+  min-width: 0;
   background: #ffffff;
   padding: 28px;
   border-radius: 12px;
@@ -147,6 +149,7 @@ nav ul li a.active:not(.btn-link) {
   border: 2px solid #cbd5e1;
   border-radius: 10px;
   background: #f9fafb;
+    flex-wrap: wrap;
 }
 
 .info-icon {
@@ -171,6 +174,8 @@ nav ul li a.active:not(.btn-link) {
   margin: 0;
   color: #64748b;
   font-size: 15px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .line {
@@ -243,8 +248,9 @@ nav ul li a.active:not(.btn-link) {
 }
 
 .submit-btn {
-  width: 200px;
-  padding: 14px;
+  width: fit-content;
+  align-self: flex-start; 
+  padding: 14px 32px;
   border: none;
   border-radius: 10px;
   background: #1f8aa5;
