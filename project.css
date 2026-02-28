@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 html,
@@ -81,18 +81,20 @@ nav {
 
 .section-title {
   margin-top: 10px;
-  font-size: 34px;
-  font-weight: 900;
+  font-size: 32px;
+  font-weight: 800;
   letter-spacing: -0.5px;
   color: #0b1b21;
   margin-bottom: 10px;
+  font-family: sans-serif;
 }
 
 .page-subtitle {
   color: rgba(0, 0, 0, 0.58);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
   margin-bottom: 26px;
+    font-family: sans-serif;
 }
 
 .projects-container {

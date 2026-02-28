@@ -216,6 +216,31 @@ h1 span {
   margin-bottom: 18px;
 }
 
+.about-section {
+    margin-top: 60px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.about-box {
+    background: rgba(245, 249, 251, 0.95);
+    padding: 25px 30px;
+    border-radius: 12px;
+    line-height: 1.7;
+    color: #374151;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(31, 138, 165, 0.1);
+    font-size: 18px;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
