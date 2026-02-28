@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: hsl(199, 57%, 90%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  background: rgba(245, 249, 251, 0.92);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(31, 138, 165, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.logo {
+  background: linear-gradient(135deg, #1f8aa5, #55c1d6);
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  width: 110px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  box-shadow: 0 10px 22px rgba(31, 138, 165, 0.22);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0b1b21;
+  font-weight: 700;
+  padding: 9px 14px;
+  border-radius: 12px;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  background: rgba(31, 138, 165, 0.10);
+  transform: translateY(-1px);
+}
+
+nav ul li a.active:not(.btn-link) {
+  background: rgba(31, 138, 165, 0.16);
+  box-shadow: 0 10px 22px rgba(31, 138, 165, 0.12);
+}
+
+.btn-link {
+  text-decoration: none;
+  padding: 10px 16px;
+  background-color: #1f8aa5;
+  color: white ;
+  border-radius: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn-link:hover {
+  background-color: #166d83;
+}
+
+.btn-outline {
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 2px solid rgba(31, 138, 165, 0.35);
+  color: #1f8aa5;
+  border-radius: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.btn-outline:hover {
+  background: rgba(31, 138, 165, 0.08);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right img {
+  width: 320px;
+  height: 320px;
+  border-radius: 500%;
+  object-fit: cover;
+  border: 6px solid rgba(31, 138, 165, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+  display: block;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+h1 span {
+  color: #aa6f3f;
+}
+
+.desc {
+  color: #334155;
+  margin-bottom: 18px;
+  line-height: 1.7;
+  font-size: 18px;
+  max-width: 560px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.education-section {
+  margin-top: 45px;
+}
+
+.education-section h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  color: #000000;
+}
+
+.edu-card {
+  background: #eef3f5;
+  padding: 22px 26px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  width: 80%;
+  min-width: 320px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.edu-card h3 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.edu-card p {
+  font-size: 16px;
+  color: #334155;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.edu-card span {
+  font-size: 13px;
+  font-weight: 800;
+  color: #aa6f3f;
+  background: #e6e6e6;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.section-title {
+  margin-top: 35px;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  .right img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .edu-card {
+    width: 100%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
