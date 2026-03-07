@@ -1,84 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Home</title>
-  <link rel="stylesheet" href="./index.css" />
+  <title>Marjia Chowdhury</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
 
-    <nav>
-      <div class="logo">Portfolio</div>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-        <li><a href="skill.html">Skills</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-
+  <header class="site-header">
+    <nav class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Me</a></li>
       </ul>
     </nav>
+  </header>
 
-    <div class="hero">
-      <div class="left">
-
-        <h1>I’m Marjia Chowdhury, a <br><span>Computer Science Student.</span></h1>
-        <p class="desc">
-        Currently studying at Metropolitan University, Sylhet.
-        </p>
-
+  <main class="page-wrap">
+    <section id="home" class="hero-section">
+      <div class="hero-text">
+        <p class="hero-label">Computer Science Student</p>
+        <h1 class="hero-name">Marjia<br><em>Chowdhury</em></h1>
+        <p class="hero-desc">Currently studying at Metropolitan University, Sylhet.</p>
         <div class="hero-actions">
-          <a class="btn-link" href="projects.html">View Projects</a>
-          
-          <a class="btn-link" href="skill.html">Skills</a> <a class="btn-link" href="contact.html">Contact</a>
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="contact.html" class="btn-outline">Get In Touch</a>
         </div>
       </div>
 
-      <div class="right">
-        <img src="image1.jpg" alt="Profile Image">
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="image1.jpg" alt="Marjia Chowdhury" />
+        </div>
       </div>
-    </div>
+    </section>
 
-    <section class="about-section">
-    
-    <h2>About Me</h2>
-    <div class="about-box">
-        <p>
-          I am a Computer Science student currently pursuing my bachelor’s degree. 
-          I am interested in web development and enjoy building practical projects that improve my problem-solving skills.
-          I am continuously learning new technologies and improving my understanding of programming, databases, and software development.
-          My goal is to become a skilled developer and contribute to meaningful projects in the future. 
-        </p>
-    </div>
-</section>
+    <div class="section-divider"></div>
 
-    <div class="education-section">
-      <h2>Education</h2>
-
-      <div class="edu-card">
-        <h3>Metropolitan University, Sylhet</h3>
-        <p>Bachelor of Science in Computer Science and Engineering</p>
-        <span>January, 2023 – December, 2026 (Expected)</span>
+    <section id="about" class="content-section">
+      <div class="section-label"></div>
+      <h2 class="section-heading">About Me</h2>
+      <div class="about-body">
+        <p>I am a Computer Science student currently pursuing my bachelor's degree. I am interested in web development and enjoy building practical projects that improve my problem-solving skills.</p>
+        <p>I am continuously learning new technologies and improving my understanding of programming, databases, and software development. My goal is to become a skilled developer and contribute to meaningful projects in the future.</p>
       </div>
+    </section>
 
-      <div class="edu-card">
-        <h3>Nari Shikka Academy Degree College</h3>
-        <p>Higher Secondary Certificate (HSC)</p>
-        <span>April, 2019 – December, 2021</span>
+    <div class="section-divider"></div>
+
+    <section id="education" class="content-section">
+      <div class="section-label"></div>
+      <h2 class="section-heading">Education</h2>
+      <div class="edu-list">
+
+        <div class="edu-card">
+          <div class="edu-card-inner">
+            <div class="edu-meta">
+              <span class="edu-badge">BSc</span>
+              <span class="edu-year">2023 – 2026</span>
+            </div>
+            <h3>Metropolitan University, Sylhet</h3>
+            <p>Bachelor of Science in Computer Science and Engineering</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-card-inner">
+            <div class="edu-meta">
+              <span class="edu-badge">HSC</span>
+              <span class="edu-year">2019 – 2021</span>
+            </div>
+            <h3>Nari Shikka Academy Degree College</h3>
+            <p>Higher Secondary Certificate</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-card-inner">
+            <div class="edu-meta">
+              <span class="edu-badge">SSC</span>
+              <span class="edu-year">2017 – 2019</span>
+            </div>
+            <h3>Rukeya Khatun Lyceum School and College</h3>
+            <p>Secondary School Certificate</p>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <div class="edu-card">
-        <h3>Rukeya Khatun Lyceum School and College</h3>
-        <p>Secondary School Certificate (SSC)</p>
-        <span>January, 2017 – February, 2019</span>
+    <div class="section-divider"></div>
+
+    <section id="skills" class="content-section">
+      <div class="section-label"></div>
+      <h2 class="section-heading">Skills</h2>
+
+      <div class="skills-wrap">
+
+        <div class="skills-group-card">
+          <div class="skills-head">
+            <h3 class="skills-group-title">Technical</h3>
+          </div>
+
+          <div class="skills-row">
+            <span class="skill-tag intermediate">C <small>Intermediate</small></span>
+            <span class="skill-tag intermediate">C++ <small>Intermediate</small></span>
+            <span class="skill-tag intermediate">HTML <small>Intermediate</small></span>
+            <span class="skill-tag intermediate">CSS <small>Intermediate</small></span>
+            <span class="skill-tag basic">JavaScript <small>Basic</small></span>
+            <span class="skill-tag basic">MySQL <small>Basic</small></span>
+            <span class="skill-tag basic">Java <small>Basic</small></span>
+            <span class="skill-tag basic">Python <small>Basic</small></span>
+          </div>
+        </div>
+
+        <div class="skills-group-card">
+          <div class="skills-head">
+            <h3 class="skills-group-title">Creative</h3>
+          </div>
+
+          <div class="skills-row">
+            <span class="skill-tag basic">Photography <small>Basic</small></span>
+            <span class="skill-tag basic">Photo Editing <small>Basic</small></span>
+            <span class="skill-tag basic">Video Editing <small>Basic</small></span>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
 
+    <div class="section-divider"></div>
 
-  </div>
+    <section id="projects" class="content-section">
+      <div class="section-label"></div>
+      <h2 class="section-heading">Projects</h2>
+      <p class="section-sub">A few things I've built — web applications, databases, and machine learning.</p>
+
+      <div class="project-list">
+
+        <a href="https://github.com/Marjia275/Calmquest_Decode-your-Anxiety" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-inner">
+            <div class="project-info">
+              <h3>CalmQuest: Decode-your-Anxiety</h3>
+              <p>A web application for mental wellness and anxiety support.</p>
+            </div>
+            <span class="project-tech">PHP · MySQL</span>
+          </div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a href="https://github.com/Marjia275/AI_Thesis_Project" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-inner">
+            <div class="project-info">
+              <h3>AI Thesis Project</h3>
+              <p>Machine learning research project for academic thesis.</p>
+            </div>
+            <span class="project-tech">Python</span>
+          </div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a href="https://github.com/Marjia275/Travel_Booking_System" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card-inner">
+            <div class="project-info">
+              <h3>Travel Booking System</h3>
+              <p>A travel reservation and booking management system.</p>
+            </div>
+            <span class="project-tech">Java</span>
+          </div>
+          <div class="project-arrow">→</div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
 </body>
-
 </html>
