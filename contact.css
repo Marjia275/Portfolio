@@ -141,7 +141,8 @@ body {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(300px, 0.95fr) minmax(320px, 1.05fr);
+  grid-template-columns: minmax(300px, 600px);
+  justify-content: center;
   gap: 26px;
   align-items: start;
 }
